@@ -6,16 +6,13 @@
     <title>Grande Tumba</title>
     <link rel="icon" href="Images/Ainz_Ooal_Gown_Render.jpg">
     <link rel="stylesheet" href="Title.css">
-    <audio loop id="audio1">
-        <source src="audio.mp3" type="audio/mpeg">
-    </audio> 
 
 </head>
-<body style="background-image: url('Images/Nazarick.jpg'); background-size: 1300px; background-repeat: no-repeat;">
+<body style="overflow: auto; background-image: url('Images/Nazarick.jpg'); background-size: 1300px; background-repeat: no-repeat;"> 
     <header>
         <table>
             <tr>
-                <td><img src="Images/Ainz_Ooal_Gown_Render.jpg" alt="Belo esqueleto" style="width:76.4px;height:66.9px;"></td>
+                <td><img onclick=secret() src="Images/Ainz_Ooal_Gown_Render.jpg" alt="Belo esqueleto" style="width:76.4px;height:66.9px;"></td>
                 <td><h1> Contemplem a Grande Tumba</h1></td>
                 <td><nav>
                     <a href="index.html" style="color:purple">Início</a>
@@ -27,9 +24,8 @@
             </tr>
         </table>
     </header>
-
     <!-- Botões dos personagens -->
-    <a href="Pages/Personagens.html" style="position: absolute; top: 330px; left: 1100px; width: 90px; height: 90px;">
+    <a href="Pages/Momonga.html" style="position: absolute; top: 330px; left: 1100px; width: 90px; height: 90px;">
         <img src="Images/Ainz_Ooal_Gown_Render.jpg" alt="Ainz">
     </a>
     <a href="Pages/Personagens.html" style="position: absolute; top: 110px; left: 200px; width: 75px; height: 95px;">
@@ -47,12 +43,15 @@
     <a href="Pages/Personagens.html" style="position: absolute; top: 230px; left: 520px; width: 70px; height: 100px;">
         <img src="Images/Mare_Bello_Fiore_Render.jpg" alt="Mare_Bello">
     </a>
-    <a href="Pages/Personagens.html" style="position: absolute; top: 360px; left: 1010px; width: 120px; height: 100px;">
+    <a href="Pages/Albedo.html" style="position: absolute; top: 360px; left: 1010px; width: 120px; height: 100px;">
         <img src="Images/Albedo_Render.jpg" alt="Albedo">
     </a>
     <a href="Pages/Personagens.html" style="position: absolute; top: 210px; left: 180px; width: 120px; height: 100px;">
         <img src="Images/Gargantua_29.jpg" alt="Gargantua_29">
     </a>
+    <audio loop id="audio1">
+        <source src="audio.mpeg" type="audio/mpeg">
+    </audio> 
 
     <script src="Pages/script.js">
         window.onresize = function() {

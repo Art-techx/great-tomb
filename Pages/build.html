@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Title.css">
+  <title>Criador de Build de Personagem - Overlord</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1c1c1c;
+      color: #f4f4f4;
+      margin: 20px;
+    }
+    
+    form {
+      background-color: #2b2b2b;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      margin: auto;
+    }
+    
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: none;
+    }
+    
+    button {
+      background-color: #d4af37;
+      color: #1c1c1c;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      background-color: #b0892f;
+    }
+    
+    .result {
+      margin-top: 20px;
+      background-color: #2b2b2b;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body style="overflow: auto;">
+
+  <header>
+    <table>
+        <tr>
+            <td><img src="../Images/Ainz_Ooal_Gown_Render.jpg" alt="Belo esqueleto" style="width:76.4px;height:66.9px;"></td>
+            <td><h1> Contemplem a Grande Tumba</h1></td>
+            <td><nav>
+                <a href="../index.html" style="color:purple">Início</a>
+                <a href="salas.html" style="color:purple">Salas</a>
+                <a href="Personagens.html" style="color:purple">Personagens</a>
+                <a href="contato.html" style="color:purple">Contato</a>
+            </nav></td>
+        </tr>
+    </table>
+  </header>
+  
+  <form id="buildForm">
+    <label for="name">Nome do Personagem:</label>
+    <input type="text" id="name" placeholder="Digite o nome">
+
+    <label for="race">Raça:</label>
+    <select id="race">
+      <option value="Humano">Humano</option>
+      <option value="Elfo">Elfo</option>
+      <option value="Demi-Humano">Demi-Humano</option>
+      <option value="Mortos-Vivos">Mortos-Vivos</option>
+      <option value="Demônio">Demônio</option>
+    </select>
+
+    <label for="class">Classe:</label>
+    <select id="class">
+      <option value="Guerreiro">Guerreiro</option>
+      <option value="Mago">Mago</option>
+      <option value="Necromante">Necromante</option>
+      <option value="Assassino">Assassino</option>
+      <option value="Sacerdote">Sacerdote</option>
+    </select>
+
+    <label for="skills">Habilidades (separadas por vírgula):</label>
+    <input type="text" id="skills" placeholder="Ex: Magia Negra, Espada Longa, Cura">
+
+    <label for="equipment">Equipamentos:</label>
+    <input type="text" id="equipment" placeholder="Ex: Armadura de Dragão, Cajado Arcano">
+
+    <button type="button" onclick="createBuild()">Criar Build</button>
+  </form>
+
+  <div class="result" id="buildResult"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

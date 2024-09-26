@@ -39,7 +39,7 @@ audio = function() {
     }
 }
 
-function playAudio() {
+playAudio = function() {
     var Audio = document.getElementById('audio1')
     Audio.play(); 
   } 
@@ -48,3 +48,32 @@ pauseAudio = function(){
     var Audio = document.getElementById('audio1')
     Audio.pause();
 }
+
+createBuild = function() {
+    const name = document.getElementById('name').value;
+    const race = document.getElementById('race').value;
+    const characterClass = document.getElementById('class').value;
+    const skills = document.getElementById('skills').value;
+    const equipment = document.getElementById('equipment').value;
+
+    const result = `
+      <h2>Build do Personagem</h2>
+      <p><strong>Nome:</strong> ${name}</p>
+      <p><strong>Raça:</strong> ${race}</p>
+      <p><strong>Classe:</strong> ${characterClass}</p>
+      <p><strong>Habilidades:</strong> ${skills}</p>
+      <p><strong>Equipamentos:</strong> ${equipment}</p>
+    `;
+
+    document.getElementById('buildResult').innerHTML = result;
+  }
+
+secret = function(){
+    var Audio = document.getElementById('audio1')
+    if (Audio.duration > 0 && !Audio.paused) {
+        location.replace("Pages/build.html")
+    } else {
+        alert("nada aqui")
+    }
+}
+

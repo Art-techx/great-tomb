@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1c1c1c;
+      color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #2b2b2b;
+      border-radius: 10px;
+    }
+
+    .character-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .character-card img {
+      border-radius: 10px;
+      max-width: 100%;
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .character-info {
+      flex: 1;
+    }
+
+    .character-info h2 {
+      color: #d4af37;
+    }
+
+    .character-info p {
+      line-height: 1.6;
+    }
+
+    .character-info p strong {
+      color: #d4af37;
+    }
+
+    @media (max-width: 768px) {
+      .character-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .character-card img {
+        width: 100%;
+      }
+
+      .character-info {
+        flex: unset;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="character-card">
+      <img src="../Images/Ainz_Ooal_Gown_Render.jpg" alt="Imagem do Personagem">
+
+      <div class="character-info">
+        <h2>Ainz Ooal Gown(Momonga)</h2>
+        <p><strong>Raça:</strong> Mortos-Vivos (Overlord)</p>
+        <p><strong>Classe:</strong> Mago Supremo, Necromante</p>
+        <p><strong>Descrição:</strong> Ainz Ooal Gown, anteriormente conhecido como Momonga, é o protagonista de Overlord. Ele é o líder da Grande Tumba de Nazarick e o personagem mais poderoso da série. Ao ser transportado para um mundo de fantasia, ele começa sua jornada para conquistar o mundo enquanto busca entender mais sobre sua nova realidade.</p>
+        <p><strong>Afiliação:</strong> Grande Tumba de Nazarick</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -28,3 +28,23 @@ Form = function(){
             break
     }
 }
+
+
+audio = function() {
+    var Audio = document.getElementById('audio1')
+    if (Audio.duration > 0 && !Audio.paused) {
+        pauseAudio()
+    } else {
+        playAudio()
+    }
+}
+
+function playAudio() {
+    var Audio = document.getElementById('audio1')
+    Audio.play(); 
+  } 
+
+pauseAudio = function(){
+    var Audio = document.getElementById('audio1')
+    Audio.pause();
+}

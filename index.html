@@ -6,6 +6,10 @@
     <title>Grande Tumba</title>
     <link rel="icon" href="Images/Ainz_Ooal_Gown_Render.jpg">
     <link rel="stylesheet" href="Title.css">
+    <audio loop id="audio1">
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio> 
+
 </head>
 <body style="background-image: url('Images/Nazarick.jpg'); background-size: 1300px; background-repeat: no-repeat;">
     <header>
@@ -18,6 +22,7 @@
                     <a href="Pages/salas.html" style="color:purple">Salas</a>
                     <a href="Pages/Personagens.html" style="color:purple">Personagens</a>
                     <a href="Pages/contato.html" style="color:purple">Contato</a>
+                    <input type="button" style="color: black;" onclick="audio()" value="Audio">
                 </nav></td>
             </tr>
         </table>
@@ -49,7 +54,7 @@
         <img src="Images/Gargantua_29.jpg" alt="Gargantua_29">
     </a>
 
-    <script>
+    <script src="Pages/script.js">
         window.onresize = function() {
             var img = document.getElementById('minhaImagem');
             var windowAspectRatio = window.innerWidth / window.innerHeight;

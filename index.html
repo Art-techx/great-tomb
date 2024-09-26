@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grande Tumba</title>
+    <link rel="icon" href="Images/Ainz_Ooal_Gown_Render.jpg">
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #minhaImagem {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: white;
+            z-index: 100;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <img id="minhaImagem" src="Images/Nazarick.jpg" alt="Imagem de fundo">
+    <header>
+        <table>
+            <td><img src="Images/Ainz_Ooal_Gown_Render.jpg" alt="Belo esqueleto" style="width:76.4px;height:66.9px;">
+            <td><h1 style="color:rgb(210, 8, 8, 0.811);"> Contemplem a Grande Tumba</h1>
+            <td><link type=>
+            <td><nav>
+                <a href="index.html" style="color:purple">Início</a>
+                <a href="Pages/salas.html" style="color:purple">Salas</a>
+                <a href="Pages/Personagens.html" style="color:purple">Personagens</a>
+                <a href="Pages/contato.html" style="color:purple">Contato</a>
+            </nav></td>
+        </table>
+    </header>
+
+    <a href="Pages/Personagens.html" style="position: absolute; top: 330px; left: 1100px; width: 90px; height: 90px;">
+        <img src="Images/Ainz_Ooal_Gown_Render.jpg" alt="Ainz" style="width: 100%; height: 100%;">
+    </a>
+    <a href="Pages/Personagens.html" style="position: absolute; top: 110px; left: 200px; width: 75px; height: 95px;">
+        <img src="Images/Shalltear_Bloodfallen_Render.jpg" alt="Shalltear" style="width: 100%; height: 100%;">
+    </a>
+    <a href="Pages/Personagens.html" style="position: absolute; top: 340px; left: 240px; width: 120px; height: 120px;">
+        <img src="Images/Cocytus_Render.jpg" alt="Cocytus" style="width: 100%; height: 100%;">
+    </a>
+    <a href="Pages/Personagens.html" style="position: absolute; top: 530px; left: 580px; width: 80px; height: 120px;">
+        <img src="Images/Demiurge_Render.jpg" alt="Demiurge" style="width: 100%; height: 100%;">
+    </a>
+    <a href="Pages/Personagens.html" style="position: absolute; top: 310px; left: 610px; width: 70px; height: 100px;">
+        <img src="Images/Aura_Bella_Fiora_Render.jpg" alt="Aura_Bella" style="width: 100%; height: 100%;">
+    </a>
+    <a href="Pages/Personagens.html" style="position: absolute; top: 230px; left: 520px; width: 70px; height: 100px;">
+        <img src="Images/Mare_Bello_Fiore_Render.jpg" alt="Mare_Bello" style="width: 100%; height: 100%;">
+    </a>
+    <a href="Pages/Personagens.html" style="position: absolute; top: 360px; left: 1010px; width: 120px; height: 100px;">
+        <img src="Images/Albedo_Render.jpg" alt="Albedo" style="width: 100%; height: 100%;">
+    </a>
+    <a href="Pages/Personagens.html" style="position: absolute; top: 210px; left: 180px; width: 120px; height: 100px;">
+        <img src="Images/Gargantua_29.jpg" alt="Gargantua_29" style="width: 100%; height: 100%;">
+    </a>
+
+
+</body>
+<script>
+window.onresize = function() {
+  var img = document.getElementById('minhaImagem');
+  var windowAspectRatio = window.innerWidth / window.innerHeight;
+  var imageAspectRatio = img.width / img.height;
+  if (windowAspectRatio > imageAspectRatio) {
+    img.style.width = '100%';
+    img.style.height = 'auto';
+  } else {
+    img.style.width = 'auto';
+    img.style.height = '100%';
+  }
+};
+window.onresize(); 
+</script>
+</html>

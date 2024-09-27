@@ -26,14 +26,30 @@ header {
     z-index: 100;
 }
 
+button {
+    background-color: #d4af37;
+    color: #1c1c1c;
+    cursor: pointer ;
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    color: #1c1c1c;
+}
+
 h1 {
     text-align: center;
     font-family: 'dejaVu Sans Mono';
     color:rgb(210, 8, 8, 0.811);
 }
 
-nav {
-    color: purple !important;
+nav a {
+    margin-left: 15px;
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'dejaVu Sans Mono';
 }
 
 a img {

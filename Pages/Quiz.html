@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Overlord</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #f4f4f4;
+            margin: 20px;
+        }
+
+        .quiz-container {
+            background-color: #2b2b2b;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        header img {
+            width: 76.4px;
+            height: 66.9px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            color: #d4af37;
+            display: inline;
+            margin-left: 10px;
+        }
+
+        nav a {
+            margin-left: 15px;
+            color: purple;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+            color: #1c1c1c;
+        }
+
+        select {
+            background-color: #d4af37;
+        }
+
+        button {
+            background-color: #d4af37;
+            color: #1c1c1c;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #b0892f;
+        }
+
+        .result {
+            margin-top: 20px;
+            background-color: #2b2b2b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+        <table>
+            <td><img src="../Images/Ainz_Ooal_Gown_Render.jpg" alt="Belo esqueleto" style="width:76.4px;height:66.9px;">
+            
+            <td><h1> Contemplem a Grande Tumba</h1>
+            <td><nav>
+                <a href="../index.html">Início</a>
+                <a href="videos.html">Videos</a>
+                <a href="Personagens.html">Personagens</a>
+                <a href="contato.html">Contato</a>
+                <a href="Quiz.html">Quiz</a>
+            </nav></td>
+        </table>
+    </header>
+
+    <h1 style="text-align: center;">Quiz de Overlord</h1>
+    <div class="quiz-container">
+        <button onclick="Start()">Iniciar</button>
+        <p id="result"></p>
+        <img src="../Images/INCÓGNITA.jpeg" alt="Personagem de Overlord" id="quiz" >
+        <p>Qual é o nome deste personagem?</p>
+        <select id="FORM">
+            <option value="0">Momonga</option>
+            <option value="1">Albedo</option>
+            <option value="2">Shalltear</option>
+            <option value="3">Aura</option>
+            <option value="4">Mare</option>
+            <option value="5">Cocytus</option>
+            <option value="6">Demiurge</option>
+            <option value="7">Gargantua</option>
+            <option value="8">Touch Me</option>
+            <option value="9">Nishikienrai</option>
+            <option value="10">Warrior Takemizuchi</option>
+            <option value="11">Amanomahitotsu</option>
+            <option value="12">Bellriver</option>
+            <option value="13">Peroroncino</option>
+            <option value="14">Bukubukuchagama</option>
+            <option value="15">Herohero</option>
+            <option value="16">Ulbert Alain Odle</option>
+            <option value="17">Variable Talisman</option>
+            <option value="18">Yamaiko</option>
+            <option value="19">Punitto Moe</option>
+            <option value="20">Tabula Smaragdina</option>
+            <option value="21">Shijuuten Suzaku</option>
+            <option value="22">Luci★Fer</option>
+        </select>
+        <button onclick="checkAnswer()">Enviar</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js">
+    </script>
+
+</body>
+</html>

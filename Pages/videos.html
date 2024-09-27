@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Expansível com Vídeos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #f4f4f4;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #555;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #d4af37;
+            color: #1c1c1c;
+        }
+
+        tr {
+            background-color: #2b2b2b;
+            cursor: pointer;
+        }
+
+        tr.expanded td {
+            background-color: #3c3c3c;
+        }
+
+        .video-container {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <td><img src="../Images/Ainz_Ooal_Gown_Render.jpg" alt="Belo esqueleto" style="width:76.4px;height:66.9px;">
+            
+            <td><h1> Contemplem a Grande Tumba</h1>
+            <td><nav>
+                <a href="../index.html">Início</a>
+                <a href="videos.html">Videos</a>
+                <a href="Personagens.html">Personagens</a>
+                <a href="contato.html">Contato</a>
+                <a href="Quiz.html">Quiz</a>
+            </nav></td>
+        </table>
+    </header>
+
+    <h1>Tabela de Vídeos Expansível</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Títulos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr onclick="toggleVideo(this)">
+                <td>Abertura</td>
+            </tr>
+            <tr class="video-container">
+                <td>
+                    <iframe src="../Videos/Primeiro.mp4" title="Video 2"></iframe>
+                </td>
+            </tr>
+            <tr onclick="toggleVideo(this)">
+                <td>Trailer 1</td>
+            </tr>
+            <tr class="video-container">
+                <td>
+                    <iframe src="../Videos/Segundo.mp4" title="Video 3"></iframe>
+                </td>
+            </tr>
+            <tr onclick="toggleVideo(this)">
+                <td>Trailer 2</td>
+            </tr>
+            <tr class="video-container">
+                <td>
+                    <iframe src="../Videos/Terceiro.mp4" title="Video 4"></iframe>
+                </td>
+            </tr>
+            <tr onclick="toggleVideo(this)">
+                <td>Trailer 3</td>
+            </tr>
+            <tr class="video-container">
+                <td>
+                    <iframe src="../Videos/Quarto.mp4" title="Video 5"></iframe>
+                </td>
+            </tr>
+            <tr onclick="toggleVideo(this)">
+                <td>Trailer 4</td>
+            </tr>
+            <tr class="video-container">
+                <td>
+                    <iframe src="../Videos/Quinto.mp4" title="Video 6"></iframe>
+                </td>
+            </tr>
+            <tr onclick="toggleVideo(this)">
+                <td>Trailer 5</td>
+            </tr>
+            <tr class="video-container">
+                <td>
+                    <iframe src="../Videos/Sexto.mp4" title="Video 7"></iframe>
+                </td>
+            </tr>
+            <tr onclick="toggleVideo(this)">
+                <td>Trailer 6</td>
+            </tr>
+            <tr class="video-container">
+                <td>
+                    <iframe src="../Videos/Setimo.mp4" title="Video 8"></iframe>
+                </td>
+            </tr>
+            <tr onclick="toggleVideo(this)">
+                <td>Trailer 7</td>
+            </tr>
+            <tr class="video-container">
+                <td>
+                    <iframe src="../Videos/Oitavo.mp4" title="Video 9"></iframe>
+                </td>
+            </tr>
+            <tr onclick="toggleVideo(this)">
+                <td>Trailer 8</td>
+            </tr>
+            <tr class="video-container">
+                <td>
+                    <iframe src="../Videos/Nono.mp4" title="Video 10"></iframe>
+                </td>
+            </tr>
+            <tr onclick="toggleVideo(this)">
+                <td>Trailer 9</td>
+            </tr>
+            <tr class="video-container">
+                <td>
+                    <iframe src="../Videos/Dez.mp4" title="Video 11"></iframe>
+                </td>
+            </tr>
+            <tr onclick="toggleVideo(this)">
+                <td>Trailer 10</td>
+            </tr>
+            <tr class="video-container">
+                <td>
+                    <iframe src="../Videos/Onze.mp4" title="Video 12"></iframe>
+                </td>
+            </tr>
+            <tr onclick="toggleVideo(this)">
+                <td>Trailer 11</td>
+            </tr>
+            <tr class="video-container">
+                <td>
+                    <iframe src="../Videos/Doze.mp4" title="Video 13"></iframe>
+                </td>
+            </tr>
+            <tr onclick="toggleVideo(this)">
+                <td>Trailer 12</td>
+            </tr>
+            <tr class="video-container">
+                <td>
+                    <iframe src="../Videos/Treze.mp4" title="Video 13"></iframe>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="script.js">
+    </script>
+
+</body>
+</html>
